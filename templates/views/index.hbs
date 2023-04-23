@@ -1,0 +1,36 @@
+<html lang="en">
+
+  <head>
+    {{>headerlinks}}
+  </head>
+  <!-- navbar secton -->
+  {{>navbar}}
+  <!-- main body secton  -->
+  <div class="container-fluid main">
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+        <div class="row">
+          <!-- for left part -->
+          <div class="col-md-6 col-12 order-md-1 order-2 main_left">
+            <p>Welcom to weather app</p>
+            <h1>You can check your current
+              <span>weather</span>
+              at your city
+            </h1>
+            <a href="/weather"><button>check now</button></a>
+          </div>
+          <!-- for right part -->
+          <div class="col-md-6 col-12 order-md-2 order-1 main_right">
+            <img src="/images/weather.svg" class="img-fluid home_img" alt="..." />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{>footer}}
+
+  <body>
+
+  </body>
+
+</html>

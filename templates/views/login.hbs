@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    {{>headerlinks}}
+  </head>
+
+  <body>
+    <!-- Navbar  -->
+    {{>navbar}}
+    <!-- form -->
+    <div class="container-fluid main">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <!-- for right part -->
+            <div class="col-md-6 col-12 main_right">
+              <img src="/images/log-in.svg" class="img-fluid home_img" alt="..." />
+            </div>
+            <!-- for left part -->
+            <div class="col-md-6 col-12 main_left login_container">
+              <h1>welcome back</h1>
+              <form action="/" method="POST">
+                <div class="mb-3">
+                  <label for="">Email Address</label>
+                  <input type="email" name="email" id="email" placeholder="please enter your email*">
+                </div>
+                <div class="mb-3">
+                  <label for="">Password</label>
+                  <input type="password" name="password" id="password" placeholder="please enter your password*">
+                </div>
+                <button type="submit">Submit</button>
+                <button><a href="/signup" style="color: #fff;">Create Account</a></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{>footer}}
+  </body>
+</html>

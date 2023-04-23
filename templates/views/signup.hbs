@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {{>headerlinks}}
+    </head>
+
+    <body>
+        <!-- Navbar  -->
+        {{>navbar}}
+        <!-- form -->
+        <div class="container-fluid main">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="row">
+                        <!-- for right part -->
+                        <div class="col-md-6 col-12 main_right">
+                            <img src="/images/Sign up-rafiki.svg" class="img-fluid home_img" alt="signup" />
+                        </div>
+                        <!-- for left part -->
+                        <div class="col-md-6 col-12 main_left login_container">
+                            <h1>Create Account</h1>
+                            <form action="/signup" method="POST">
+                                <div class="mb-3">
+                                    <label for="">Firstname</label>
+                                    <input type="text" name="firstname" id="firstname"
+                                        placeholder="please enter your first name*">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Lastname</label>
+                                    <input type="text" name="lastname" id="lastname"
+                                        placeholder="please enter your last name*">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Mobile No</label>
+                                    <input type="number" name="mobile" id="mobile"
+                                        placeholder="please enter your mobile no*">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Select Your Gender</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="Male"
+                                            value="Male">
+                                        <label class="form-check-label " for="inlineRadio1">Male</label>
+                                    </div>
+                                    <div class="form-check form-check-inline ">
+                                        <input class="form-check-input" type="radio" name="gender" id="Female"
+                                            value="Female">
+                                        <label class="form-check-label" for="inlineRadio2">Female</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Email Address</label>
+                                    <input type="email" name="email" id="email" placeholder="please enter your email*">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Password</label>
+                                    <input type="password" name="password" id="password"
+                                        placeholder="please enter your password*">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Conferm Password</label>
+                                    <input type="password" name="cpassword" id="cpassword"
+                                        placeholder="conferm password*">
+                                </div>
+                                <h3>Already have an account ? <a href="/" >Log In</a></h3>
+                                <button type="submit" value="signup">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ {{>footer}}
+    </body>
+
+</html>

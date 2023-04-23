@@ -1,0 +1,42 @@
+<html lang="en">
+
+  <head>
+    {{>headerlinks}}
+  </head>
+
+  <body>
+    {{>navbar}}
+    <!-- main body secton  -->
+    <div class="container-fluid main">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="search aline-center">
+            <input type="text" placeholder="Enter any city name" autocomplete="off" value="" class="input_search" />
+            <button class="submit">search</button>
+          </div>
+          <div class="result">
+            <h1 class="country text-center">Please write any city name</h1>
+            <div class="others">
+              <div class="conditon">
+                <div class="img"></div>
+                <p class="weth_con">cloudy</p>
+              </div>
+              <p>temp: <span class="temp">30</span> <sup>o</sup>C</p>
+              <p>min temp : <span class="temp_min">30</span> <sup>o</sup>C || max temp : <span
+                  class="temp_max">30</span><sup>o</sup>C </p>
+              <p>humidity: <span class="humidity">23</span> %</p>
+              <p>wind speed : <span class="speed">30</span> km/h</p>
+              <h3>Last update :</h3>
+              <p class="date_time">wed | 12 || 12:00 pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Made ❤️ by swadesh pal</p>
+    </footer>
+    <script src="/js/index.js"></script>
+  </body>
+
+</html>
